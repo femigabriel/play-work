@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeori sticky nav</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+  <header>
+    <h1>ᗩᗪᗴᗝᖇI'ᔕ ᖴᗝᗝᗪ</h1>
+  </header>
+
+  <nav id="main">
+    <ul>
+      
+      <li class="logo"><a href="#">𝔸𝕕𝕖𝕠𝕣𝕚'𝕤 𝔽𝕠𝕠𝕕</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Reservation</a></li>
+      <li><a href="#">Menu</a></li>
+    </ul>
+  </nav>
+
+ <article class="Selling-food">
+   <section class="info-Selling">
+       <br>
+       <br>
+     <h2>our dishes</h2>
+     <hr>
+   </section>
+
+   <section class="photo-Selling">
+      <section class="box-Selling">
+         <section class="sale-photo">
+            <img src="https://www.fmnfoods.com/wp-content/uploads/2020/06/about.jpg" alt="">
+         </section>
+         <section class="sale-info">
+           <h3>Piece of burger</h3>
+           <p>A piece of meat alone with broccoli</p>
+           <h3>#1500</h3>
+         </section>
+     </section>
+     <section class="box-Selling">
+        <section class="sale-photo">
+           <img src="https://www.nicepng.com/png/full/981-9817865_plate-1-home-cooked-meals-garnished.png" alt="">
+        </section>
+        <section class="sale-info">
+          <h3>Roast beef</h3>
+          <p>Grilled meat on grill with salad .</p>
+          <h3>#3000</h3>
+        </section>
+    </section>
+     <section class="box-Selling">
+        <section class="sale-photo">
+           <img src="https://s3.amazonaws.com/alabama-travel/uploads/app_images/dishes/dish-cheeseburger-in-paradise-xl.png" alt="">
+        </section>
+        <section class="sale-info">
+          <h3>Beef burger</h3>
+          <p>Beef burger with sliced onions, tomatoes.</p>
+          <h3>#2000</h3>
+        </section>
+    </section>
+    <section class="box-Selling">
+       <section class="sale-photo">
+          <img src="https://cdn.xxl.thumbs.canstockphoto.com/fried-chicken-wings-for-a-party-close-up-chicken-food-isolated-on-white-fried-chicken-on-white-picture_csp56647317.jpg" alt="">
+       </section>
+       <section class="sale-info">
+         <h3>Chicken strips</h3>
+         <p>Chicken slices with salad and basil paper .</p>
+         <h3>#2500</h3>
+       </section>
+   </section>
+   </section>
+
+
+   <section class="photo-Selling">
+      <section class="box-Selling">
+         <section class="sale-photo">
+            <img src="https://cdn-media.nourishfitfood.co.uk/banner-meal.png" alt="">
+         </section>
+         <section class="sale-info">
+           <h3>Meat is spicy</h3>
+           <p>Meat spiced with basil leaf, lemon and tomato .</p>
+           <h3>#3500</h3>
+         </section>
+     </section>
+     <section class="box-Selling">
+        <section class="sale-photo">
+           <img src="https://i.ya-webdesign.com/images/food-dish-png-18.png" alt="">
+        </section>
+        <section class="sale-info">
+          <h3>Rice with steak</h3>
+          <p>Platter rice with steaks with vegetables .</p>
+          <h3>#1800</h3>
+        </section>
+    </section>
+    <section class="box-Selling">
+       <section class="sale-photo">
+          <img src="https://www.eatmightymeals.com/wp-content/uploads/2019/04/web_layers_0018_Salmon-Zoodle-Puttanesca-700x700.png" alt="">
+       </section>
+       <section class="sale-info">
+         <h3>Bean salad</h3>
+         <p>Bean salad with cucumber and a piece of bread with cumin .</p>
+         <h3>#1350</h3>
+       </section>
+   </section>
+   <section class="box-Selling">
+     <section class="sale-photo">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-e9ixWQwA2rCMBOs2IOcbadSJ-HuyqfeByA&usqp=CAU" alt="">
+     </section>
+      <section class="sale-info">
+        <h3>Pasta with chicken</h3>
+        <p>Macaroni cut chicken with tomato .</p>
+        <h3>#2800</h3>
+      </section>
+  </section>
+   </section>
+ </article>
+
+
+    <footer>𝔸𝕕𝕖𝕠𝕣𝕚'𝕤 𝔽𝕠𝕠𝕕@2021
+ </footer> 
+    <script>
+const nav = document.querySelector('#main');
+const topOfNav = nav.offsetTop;
+
+function fixNav() {
+  if(window.scrollY >= topOfNav) {
+    document.body.style.paddingTop = nav.offsetHeight + 'px';
+    document.body.classList.add('fixed-nav');
+  } else {
+    document.body.style.paddingTop = 0;
+    document.body.classList.remove('fixed-nav');
+  }
+}
+
+window.addEventListener('scroll', fixNav);
+    </script>
+</body>
+</html>
